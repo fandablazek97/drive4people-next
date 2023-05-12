@@ -14,11 +14,6 @@ export default function Home() {
 
       <Hero />
 
-      <Container py="xl" className="bg-red-800">
-        <Heading level={2} size="xl" className="text-center">
-          Hero
-        </Heading>
-      </Container>
       <Container py="xl" className="bg-green-800">
         <Heading level={2} size="xl" className="text-center">
           Služby
