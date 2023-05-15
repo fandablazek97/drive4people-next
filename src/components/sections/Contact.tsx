@@ -216,7 +216,12 @@ export default function Contact() {
             <span>{t.index.contect.billingInfo.sro.dic}</span>
             <br />
             <br />
-            <span className="font-bold">Bankovní spojení</span> <br />
+            <span>{t.index.contect.billingInfo.bank.number}</span>
+            <br />
+            <span>{t.index.contect.billingInfo.bank.iban}</span>
+            <br />
+            <span>{t.index.contect.billingInfo.bank.bicSwift}</span>
+            <br />
           </p>
         </Reveal>
       </div>

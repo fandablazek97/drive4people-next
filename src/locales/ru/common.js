@@ -182,6 +182,12 @@ export const ru = {
     carFleet: {
       preHeading: "Vozový park",
       heading: "Čím Vás povezeme?",
+      perex:
+        "Jsme schopni zajistit pro Vás dopravu jakýmkoliv vozidlem, ať už potřebujete osobní vůz nebo vícecestný minibus. Navíc nově připravujeme profesionální přepravu zboží po celé Evropě, kterou zajišťujeme moderními dodávkami. Můžete se spolehnout na naši spolehlivost a pečlivý přístup k Vašim potřebám.",
+      cars: {
+        car1: "Volkswagen Passat Variant, 2019",
+        car2: "Mercedes-Benz E Class 220D – 2019",
+      },
     },
 
     // Contact section

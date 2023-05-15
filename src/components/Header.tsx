@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 // import { useTranslation } from "@/hooks/useTranslation";
 import { useRouter } from "next/router";
 import { HiPhone } from "react-icons/hi";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 // ToDo
 // - Rewrite styling to be more pretty and easier to customize
@@ -288,14 +289,7 @@ export default function Header() {
   }, [scrollY, setIsVisible, setIsScrolled]);
 
   // i18n
-  const router = useRouter();
-  const { locale } = router;
   const t = useTranslation();
-
-  function changeLanguage() {
-    const newLocale = locale === "cs" ? "en" : "cs";
-    router.push(router.pathname, router.pathname, { locale: newLocale });
-  }
 
   return (
     <nav
@@ -325,11 +319,9 @@ export default function Header() {
           </div>
 
           <div>
-            <ul className="flex gap-3 xl:gap-6">
-              <li>
-                <Button onClick={changeLanguage} intent="white">{`${
-                  locale === "cs" ? "EN" : "CZ"
-                }`}</Button>
+            <ul className="flex items-center gap-3 xl:gap-6">
+              <li className="h-full">
+                <LanguageSwitcher />
               </li>
               <li className="hidden sm:block">
                 <Button leftIcon={<HiPhone />} href={contact[0].href}>

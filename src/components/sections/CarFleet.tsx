@@ -18,12 +18,15 @@ export default function CarFleet() {
             <Heading level={"none"} size="md" color="white" hasMarginBottom>
               {t.index.carFleet.heading}
             </Heading>
+            <p className="pt-3 leading-relaxed text-gray-300">
+              {t.index.carFleet.perex}
+            </p>
           </Reveal>
           <Reveal>
             <Heading level={3} size="sm" color="primary" hasMarginBottom>
               Vozidlo je pro Vás vždy dokonale připravené.
             </Heading>
-            <ul className="ml-8 list-disc text-gray-300">
+            <ul className="ml-4 flex list-disc flex-col gap-3 pt-3 text-gray-300">
               <li>
                 Vozidlo je plně vybavené s automatickou převodovkou pro Vaše
                 pohodlí
@@ -43,147 +46,58 @@ export default function CarFleet() {
 
         <Reveal className="ui-heading mt-28">
           <Heading level={4} size="sm" color="white">
-            Mercedes-Benz E Class 220D - 2019
+            {t.index.carFleet.cars.car1}
           </Heading>
         </Reveal>
-        <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-4 md:grid-rows-3">
-          <Reveal className="col-span-2 row-span-2">
+        <div className="mt-8 grid grid-cols-2 gap-8 ">
+          <Reveal className="col-span-1">
             <Image
-              src="/images/mercedes/mercedes-1.jpg"
+              src="/img/d4p-2023-8.jpg"
               alt="Mercedes Benz"
               width={1920}
-              height={1080}
+              height={1280}
               loading="lazy"
-              className="aspect-[4/3]"
-            />
-          </Reveal>
-          {/* <Reveal className=""></Reveal> */}
-
-          <Reveal className="col-span-2 row-span-2">
-            <Image
-              src="/images/mercedes/mercedes-29.jpg"
-              alt="Mercedes Benz"
-              width={1920}
-              height={1080}
-              loading="lazy"
-              className="aspect-[4/3]"
+              className="aspect-[3/2]"
             />
           </Reveal>
 
           <Reveal className="col-span-1">
             <Image
-              src="/images/mercedes/mercedes-9.jpg"
+              src="/img/d4p-2023-9.jpg"
               alt="Mercedes Benz"
               width={1920}
-              height={1080}
+              height={1280}
               loading="lazy"
-              className="aspect-[4/3]"
-            />
-          </Reveal>
-
-          <Reveal className="col-span-1 ">
-            <Image
-              src="/images/mercedes/mercedes-11.jpg"
-              alt="Mercedes Benz"
-              width={1920}
-              height={1080}
-              loading="lazy"
-              className="aspect-[4/3]"
-            />
-          </Reveal>
-
-          <Reveal className="col-span-1 ">
-            <Image
-              src="/images/mercedes/mercedes-24.jpg"
-              alt="Mercedes Benz"
-              width={1920}
-              height={1080}
-              loading="lazy"
-              className="aspect-[4/3]"
-            />
-          </Reveal>
-
-          <Reveal className="col-span-1">
-            <Image
-              src="/images/mercedes/mercedes-4.jpg"
-              alt="Mercedes Benz"
-              width={1920}
-              height={1080}
-              loading="lazy"
-              className="aspect-[4/3]"
+              className="aspect-[3/2]"
             />
           </Reveal>
         </div>
 
         <Reveal className="mt-28">
           <Heading level={4} size="sm" color="white">
-            Volkswagen Golf VII Variant - 2017
+            {t.index.carFleet.cars.car2}
           </Heading>
         </Reveal>
-        <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-4 md:grid-rows-3">
-          <Reveal className="col-span-2 row-span-2">
+        <div className="mt-8 grid grid-cols-2 gap-8 ">
+          <Reveal className="col-span-1">
             <Image
-              src="/images/golf/golf-9.jpg"
-              alt="Volkswagen Golf VII"
+              src="/img/d4p-2023-4.jpg"
+              alt="Mercedes Benz"
               width={1920}
-              height={1080}
+              height={1280}
               loading="lazy"
-              className="aspect-[4/3]"
-            />
-          </Reveal>
-
-          <Reveal className="col-span-2 row-span-2">
-            <Image
-              src="/images/golf/golf-2.jpg"
-              alt="Volkswagen Golf VII"
-              width={1920}
-              height={1080}
-              loading="lazy"
-              className="aspect-[4/3]"
+              className="aspect-[3/2]"
             />
           </Reveal>
 
           <Reveal className="col-span-1">
             <Image
-              src="/images/golf/golf-6.jpg"
-              alt="Volkswagen Golf VII"
+              src="/img/d4p-2023-3.jpg"
+              alt="Mercedes Benz"
               width={1920}
-              height={1080}
+              height={1280}
               loading="lazy"
-              className="aspect-[4/3]"
-            />
-          </Reveal>
-
-          <Reveal className="col-span-1">
-            <Image
-              src="/images/golf/golf-7.jpg"
-              alt="Volkswagen Golf VII"
-              width={1920}
-              height={1080}
-              loading="lazy"
-              className="aspect-[4/3]"
-            />
-          </Reveal>
-
-          <Reveal className="col-span-1">
-            <Image
-              src="/images/golf/golf-10.jpg"
-              alt="Volkswagen Golf VII"
-              width={1920}
-              height={1080}
-              loading="lazy"
-              className="aspect-[4/3]"
-            />
-          </Reveal>
-
-          <Reveal className="col-span-1">
-            <Image
-              src="/images/golf/golf-8.jpg"
-              alt="Volkswagen Golf VII"
-              width={1920}
-              height={1080}
-              loading="lazy"
-              className="aspect-[4/3]"
+              className="aspect-[3/2]"
             />
           </Reveal>
         </div>

@@ -34,14 +34,14 @@ export const cs = {
     seo: {
       title: "Přepravíme odkudkoli kamkoli",
       description:
-        "Drive4people se zaměřuje se na přepravu osob v rámci Evropy. Nabízíme služby osobního řidiče, expresního kurýra, přepravu na svatby, večírky nebo letiště.",
+        "Zajistíme Vám pohodlnou, bezpečnou a rychlou přepravu osob po Evropě. Jsme mladá, dynamická firma, která se neustále rozvíjí, aby Vám mohla nabídnout nejmodernější způsoby dopravy.",
     },
 
     // Hero section
     hero: {
       heading: "Přepravíme odkudkoli kamkoli",
       perex:
-        "Jsme mladá, rozvíjející se společnost, která se zaměřuje na komfortní, bezpečnou a rychlou přepravu osob v rámci Evropy.",
+        "Zajistíme Vám pohodlnou, bezpečnou a rychlou přepravu osob po Evropě. Jsme mladá, dynamická firma, která se neustále rozvíjí, aby Vám mohla nabídnout nejmodernější způsoby dopravy.",
       button: "Zjistit více",
     },
 
@@ -182,6 +182,12 @@ export const cs = {
     carFleet: {
       preHeading: "Vozový park",
       heading: "Čím Vás povezeme?",
+      perex:
+        "Jsme schopni zajistit pro Vás dopravu jakýmkoliv vozidlem, ať už potřebujete osobní vůz nebo vícecestný minibus. Navíc nově připravujeme profesionální přepravu zboží po celé Evropě, kterou zajišťujeme moderními dodávkami. Můžete se spolehnout na naši spolehlivost a pečlivý přístup k Vašim potřebám.",
+      cars: {
+        car1: "Volkswagen Passat Variant, 2019",
+        car2: "Mercedes-Benz E Class 220D – 2019",
+      },
     },
 
     // Contact section
