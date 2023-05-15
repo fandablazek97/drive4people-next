@@ -189,7 +189,7 @@ function TouchMenu() {
                 opacity: 0,
                 transition: { duration: 0.15, ease: [0.33, 1, 0.68, 1] },
               }}
-              className="fixed inset-0 z-offcanvas min-h-screen bg-gray-800"
+              className="fixed inset-0 z-offcanvas min-h-screen bg-gray-900"
             >
               {/* Menu */}
               <Container

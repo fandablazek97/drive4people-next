@@ -1,8 +1,7 @@
 import clsx from "clsx";
 
-type HeadingProps = {
+type PreHeadingProps = {
   level: 1 | 2 | 3 | 4 | 5 | 6 | "none";
-  size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "inherit";
   color?: "muted" | "rich" | "primary" | "inherit" | "white" | "black";
   hasMarginBottom?: boolean;
   children: React.ReactNode;
@@ -12,16 +11,7 @@ type HeadingProps = {
 
 // Component Variant Styles
 const componentVariants = {
-  base: "block font-extrabold font-sans",
-  size: {
-    xs: "text-base",
-    sm: "text-xl lg:text-2xl",
-    md: "text-2xl sm:text-3xl lg:text-4xl",
-    lg: "text-3xl sm:text-4xl lg:text-6xl",
-    xl: "text-4xl sm:text-6xl lg:text-7xl",
-    "2xl": "text-5xl sm:text-6xl md:text-7xl lg:text-8xl",
-    inherit: "",
-  },
+  base: "block font-semibold font-sans uppercase text-lg",
   color: {
     inherit: "",
     rich: "text-gray-900",
@@ -33,15 +23,14 @@ const componentVariants = {
   marginBottom: "mb-[0.65em]",
 };
 
-export default function Heading({
+export default function PreHeading({
   level = 2,
-  size = "md",
-  color = "rich",
-  hasMarginBottom = false,
+  color = "muted",
+  hasMarginBottom = true,
   className = "",
   children,
   ...rest
-}: HeadingProps) {
+}: PreHeadingProps) {
   // Resolve the correct HTML AsElement
   let AsElement = `h${level}` as keyof JSX.IntrinsicElements;
   if (level === "none") AsElement = "span";
@@ -49,7 +38,6 @@ export default function Heading({
     <AsElement
       className={clsx(
         componentVariants.base,
-        componentVariants.size[size],
         componentVariants.color[color],
         hasMarginBottom && componentVariants.marginBottom,
         className

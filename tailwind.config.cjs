@@ -16,7 +16,7 @@ module.exports = {
         xs: "374px",
       },
       colors: {
-        gray: colors.zinc,
+        gray: colors.slate,
         primary: {
           DEFAULT: colors.indigo[500],
           ...colors.indigo,
