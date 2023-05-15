@@ -2,13 +2,8 @@ import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Link from "@/components/Link";
 import Logo from "@/components/Logo";
-import {
-  contact,
-  csroutes,
-  deroutes,
-  enroutes,
-  ruroutes,
-} from "@/configs/navigation";
+import { contact } from "@/configs/navigation";
+import { useTranslation } from "@/hooks/useTranslation";
 import clsx from "clsx";
 import { AnimatePresence, motion, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -16,6 +11,7 @@ import { useEffect, useState } from "react";
 // i18n
 // import { useTranslation } from "@/hooks/useTranslation";
 import { useRouter } from "next/router";
+import { HiPhone } from "react-icons/hi";
 
 // ToDo
 // - Rewrite styling to be more pretty and easier to customize
@@ -115,7 +111,6 @@ function BurgerButton({
 function TouchMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
-  const lang = router.locale;
 
   function toggleMenu() {
     setIsOpen(!isOpen);
@@ -158,19 +153,7 @@ function TouchMenu() {
   }, [router, isOpen, setIsOpen]);
 
   // i18n
-  // const t: any = useTranslation();
-
-  // return correct routes based on language
-  const routes =
-    lang === "cs"
-      ? csroutes
-      : lang === "en"
-      ? enroutes
-      : lang === "de"
-      ? deroutes
-      : lang === "ru"
-      ? ruroutes
-      : csroutes;
+  const t = useTranslation();
 
   return (
     <>
@@ -194,9 +177,9 @@ function TouchMenu() {
               {/* Menu */}
               <Container
                 size="md"
-                className="h-full pt-24 pb-8 sm:pb-12 lg:flex lg:items-center"
+                className="h-full pt-24 pb-8 sm:pb-12 xl:flex xl:items-center"
               >
-                <div className="grid w-full gap-8 lg:grid-cols-7 lg:pb-16">
+                <div className="grid w-full gap-8 xl:grid-cols-7 xl:pb-16">
                   {/* Navigace */}
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -204,13 +187,13 @@ function TouchMenu() {
                       opacity: 1,
                       transition: { duration: 0.4, ease: [0.33, 1, 0.68, 1] },
                     }}
-                    className="col-span-1 lg:order-3 lg:col-span-2"
+                    className="col-span-1 xl:order-3 xl:col-span-2"
                   >
                     {/* <span className="mb-3 block text-xs uppercase opacity-60 sm:text-sm lg:mb-6">
                       {t.common.nav.menu}
                     </span> */}
-                    <ul className="flex flex-col items-start gap-y-2 lg:gap-y-5">
-                      {routes.map((route, i) => (
+                    <ul className="flex flex-col items-start gap-y-2 xl:gap-y-5">
+                      {t.common.routes.map((route, i) => (
                         <li key={i}>
                           <TouchNavLink
                             href={route.href}
@@ -234,7 +217,7 @@ function TouchMenu() {
                         ease: [0.33, 1, 0.68, 1],
                       },
                     }}
-                    className="col-span-1 lg:order-2 lg:col-span-2"
+                    className="col-span-1 xl:order-2 xl:col-span-2"
                   >
                     {/* <span className="mb-3 block text-xs uppercase opacity-60 sm:text-sm lg:mb-6">
                       {t.common.nav.otherLinks}
@@ -246,7 +229,7 @@ function TouchMenu() {
                           key={i}
                           i={i}
                           hoverEffect="scale-down"
-                          className="sm:text-lg lg:text-xl"
+                          className="sm:text-lg xl:text-xl"
                         >
                           {contactLink.label}
                         </Link>
@@ -266,7 +249,7 @@ function TouchMenu() {
                         ease: [0.33, 1, 0.68, 1],
                       },
                     }}
-                    className="col-span-1 lg:order-1 lg:col-span-2"
+                    className="col-span-1 xl:order-1 xl:col-span-2"
                   ></motion.div>
                 </div>
               </Container>
@@ -307,25 +290,12 @@ export default function Header() {
   // i18n
   const router = useRouter();
   const { locale } = router;
-  const lang = router.locale;
-  // const t = useTranslation();
+  const t = useTranslation();
 
   function changeLanguage() {
     const newLocale = locale === "cs" ? "en" : "cs";
     router.push(router.pathname, router.pathname, { locale: newLocale });
   }
-
-  // return correct routes based on language
-  const routes =
-    lang === "cs"
-      ? csroutes
-      : lang === "en"
-      ? enroutes
-      : lang === "de"
-      ? deroutes
-      : lang === "ru"
-      ? ruroutes
-      : csroutes;
 
   return (
     <nav
@@ -339,14 +309,14 @@ export default function Header() {
         {/* <div className="absolute inset-0 z-fixed-below h-full w-full rounded-full backdrop-blur-md" /> */}
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link href={"/"} className="z-offcanvas-above mr-auto lg:mr-10">
+          <Link href={"/"} className="z-offcanvas-above mr-auto xl:mr-10">
             <Logo />
           </Link>
 
           {/* Desktop navigation */}
-          <div className="hidden lg:mr-auto lg:block">
+          <div className="hidden xl:mr-auto xl:block">
             <ul className="flex gap-5 xl:gap-8">
-              {routes.map((route, i) => (
+              {t.common.routes.map((route, i) => (
                 <li key={i}>
                   <DesktopNavLink href={route.href} label={route.label} />
                 </li>
@@ -361,14 +331,16 @@ export default function Header() {
                   locale === "cs" ? "EN" : "CZ"
                 }`}</Button>
               </li>
-              <li className="hidden md:block">
-                <Button href="https://eshop.fhprager.cz">E-shop</Button>
+              <li className="hidden sm:block">
+                <Button leftIcon={<HiPhone />} href={contact[0].href}>
+                  {contact[0].label}
+                </Button>
               </li>
             </ul>
           </div>
 
           {/* Mobile navigation */}
-          <div className="lg:hidden">
+          <div className="xl:hidden">
             <TouchMenu />
           </div>
         </div>

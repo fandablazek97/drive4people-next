@@ -9,7 +9,23 @@ import {
 
 export const ru = {
   common: {
-    footer: {},
+    routes: [
+      { href: "/#sluzby", label: "Services" },
+      { href: "/#cenik", label: "Price list" },
+      { href: "/#reference", label: "Testimonials" },
+      { href: "/#ridici", label: "Drivers" },
+      { href: "/#vozy", label: "Car fleet" },
+      { href: "/#kontakt", label: "Contact" },
+    ],
+    footer: {
+      links: [
+        {
+          href: "/gdpr",
+          label: "Privacy policy",
+        },
+      ],
+      revealSignature: "Vytvořili reveal",
+    },
   },
 
   // Main Page
@@ -172,6 +188,31 @@ export const ru = {
     contect: {
       preHeading: "Kontakt",
       heading: "Pojďte se s námi svézt",
+      phoneHeading: "Telefon:",
+      emailHeading: "Email:",
+      form: {
+        heading: "Máte dotaz?",
+        nameSurnameInput: "Jméno a příjmení",
+        emailInput: "Váš e-mail",
+        phoneInput: "Váš telefon",
+        messageInput: "Vaše zpráva",
+        gdprLabel: "Souhlasím s podmínkami",
+        gdprLink: "ochrany osobních údajů.",
+        submitButton: "Odeslat",
+      },
+      billingInfo: {
+        heading: "Fakturační údaje",
+        sro: {
+          name: "Cardrive4people s.r.o",
+          ico: "IČO: 17440858",
+          dic: "DIČ: CZ17440858",
+        },
+        bank: {
+          number: "6204445359/0800",
+          iban: "IBAN - CZ76 0800 0000 0062 0444 5359",
+          bicSwift: "BIC/SWIFT - GIBACZPX",
+        },
+      },
     },
   },
 };

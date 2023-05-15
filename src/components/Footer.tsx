@@ -1,3 +1,4 @@
+import { useTranslation } from "@/hooks/useTranslation";
 import Container from "./Container";
 import Link from "./Link";
 
@@ -22,6 +23,7 @@ function RevealMark({ className = "" }: { className?: string }) {
 }
 
 export default function Footer() {
+  const t = useTranslation();
   return (
     <footer className="w-screen bg-gray-900">
       <Container
@@ -33,24 +35,17 @@ export default function Footer() {
           Copyright © {new Date().getFullYear()} drive4people.cz
         </span>
         <ul className="flex list-none flex-col space-y-4 lg:mr-8 lg:flex-row lg:space-y-0 lg:space-x-6 xl:mr-16 xl:space-x-10">
-          <li>
-            <Link
-              href="/cookies"
-              hoverEffect="scale-up"
-              className="font-normal text-white"
-            >
-              Cookies
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/gdpr"
-              hoverEffect="scale-up"
-              className="font-normal text-white"
-            >
-              Zpracování osobních údajů
-            </Link>
-          </li>
+          {t.common.footer.links.map((link) => (
+            <li key={link.label}>
+              <Link
+                href={link.href}
+                hoverEffect="scale-up"
+                className="font-normal text-white"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
         <RevealMark />
       </Container>

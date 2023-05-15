@@ -9,7 +9,23 @@ import {
 
 export const cs = {
   common: {
-    footer: {},
+    routes: [
+      { href: "/#sluzby", label: "Služby" },
+      { href: "/#cenik", label: "Ceník" },
+      { href: "/#reference", label: "Reference" },
+      { href: "/#ridici", label: "Řidiči" },
+      { href: "/#vozy", label: "Vozy" },
+      { href: "/#kontakt", label: "Kontakt" },
+    ],
+    footer: {
+      links: [
+        {
+          href: "/gdpr",
+          label: "Zpracování osobních údajů",
+        },
+      ],
+      revealSignature: "Vytvořili Reveal",
+    },
   },
 
   // Main Page
@@ -36,32 +52,32 @@ export const cs = {
       services: [
         {
           heading: "Přeprava na/z letiště v rámci evropy",
-          text: "Lorem ipsum dolor",
+          text: "Potřebujete osobní přepravu na letiště, ale nechcete se zdržovat plánovaním cesty a parkováním svého auta na letišti? Pak je tato služba dělaná přesně Vám na míru.",
           icon: FaPlane,
         },
         {
           heading: "Svatby",
-          text: "Lorem ipsum dolor",
+          text: "Hledáte vhodný vůz pro novomanžele nebo svatební hosty? Pro tuto sváteční příležitost Vám zajistíme komfortní vůz s řidičem v obleku, který Vám bude po celou dobu profesionálně k dispozici.",
           icon: FaHeart,
         },
         {
           heading: "Osobní řidič s naším vozem",
-          text: "Lorem ipsum dolor",
+          text: "Máte důležité jednání, na které se potřebujete soustředit a připravit? Nabízíme možnost profesionálního osobního řidiče, který za Vás naplánuje cestu a zajistí komfortní a bezpečnou přepravu v rámci České republiky a Evropy",
           icon: FaCompass,
         },
         {
           heading: "Expresní kurýr",
-          text: "Lorem ipsum dolor",
+          text: "Máte důležitou zásilku, kterou potřebujete rychle a bezpečně dostat na druhou stranu republiky nebo Evropy. I takovou službu pro Vás zařídíme.",
           icon: FaShoppingBag,
         },
         {
           heading: "Firemní večírky a oslavy",
-          text: "Lorem ipsum dolor",
+          text: "Pro firemní či rodinné akce, zajistíme dopravu od včasného vyzvednutí, po bezpečnou a komfortní přepravu přímo ke dveřím.",
           icon: FaGlassMartiniAlt,
         },
         {
           heading: "Osobní řidič Vašeho vozu",
-          text: "Lorem ipsum dolor",
+          text: "Více informací na info@drive4people.cz",
           icon: FaCar,
         },
       ],
@@ -145,7 +161,7 @@ export const cs = {
         },
         {
           name: "Lukáš Kousal",
-          text: "(Přeloženo pomocí google) <br /> Pravidelně chodím do této společnosti. A jsem vždy spokojen s přesností. Vždy mě potkávají ve všech požadavcích a náhlých změnách. Mohu jen DOPORUČIT!",
+          text: "(Přeloženo pomocí google) - Pravidelně chodím do této společnosti. A jsem vždy spokojen s přesností. Vždy mě potkávají ve všech požadavcích a náhlých změnách. Mohu jen DOPORUČIT!",
         },
         {
           name: "Hana Bluchová",
@@ -172,6 +188,31 @@ export const cs = {
     contect: {
       preHeading: "Kontakt",
       heading: "Pojďte se s námi svézt",
+      phoneHeading: "Telefon:",
+      emailHeading: "Email:",
+      form: {
+        heading: "Máte dotaz?",
+        nameSurnameInput: "Jméno a příjmení",
+        emailInput: "Váš e-mail",
+        phoneInput: "Váš telefon",
+        messageInput: "Vaše zpráva",
+        gdprLabel: "Souhlasím s podmínkami",
+        gdprLink: "ochrany osobních údajů.",
+        submitButton: "Odeslat",
+      },
+      billingInfo: {
+        heading: "Fakturační údaje",
+        sro: {
+          name: "Cardrive4people s.r.o",
+          ico: "IČO: 17440858",
+          dic: "DIČ: CZ17440858",
+        },
+        bank: {
+          number: "6204445359/0800",
+          iban: "IBAN - CZ76 0800 0000 0062 0444 5359",
+          bicSwift: "BIC/SWIFT - GIBACZPX",
+        },
+      },
     },
   },
 };

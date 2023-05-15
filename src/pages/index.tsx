@@ -1,8 +1,7 @@
-import Container from "@/components/Container";
-import Heading from "@/components/Heading";
 import Layout from "@/components/Layout";
 import Seo from "@/components/Seo";
 import CarFleet from "@/components/sections/CarFleet";
+import Contact from "@/components/sections/Contact";
 import Drivers from "@/components/sections/Drivers";
 import Hero from "@/components/sections/Hero";
 import PriceList from "@/components/sections/PriceList";
@@ -23,12 +22,7 @@ export default function Home() {
       <Testimonials />
       <Drivers />
       <CarFleet />
-
-      <Container py="xl" className="bg-sky-800">
-        <Heading level={2} size="xl" className="text-center">
-          Konkakt
-        </Heading>
-      </Container>
+      <Contact />
     </Layout>
   );
 }
