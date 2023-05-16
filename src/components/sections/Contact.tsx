@@ -1,6 +1,8 @@
 import { contact } from "@/configs/navigation";
 import { useTranslation } from "@/hooks/useTranslation";
 import emailjs from "@emailjs/browser";
+import clsx from "clsx";
+import { useRouter } from "next/router";
 import { useRef, useState } from "react";
 import Button from "../Button";
 import Container from "../Container";
@@ -13,6 +15,30 @@ import Hnypot from "../inputs/Hnypot";
 import TextArea from "../inputs/TextArea";
 import TextInput from "../inputs/TextInput";
 
+function Alert({
+  type = "success",
+  title = "Děkujeme za odeslání formuláře",
+  message = "Váš formulář byl úspěšně odeslán. Brzy se Vám ozveme.",
+}: {
+  type?: "success" | "error";
+  title?: string;
+  message?: string;
+}) {
+  return (
+    <div
+      className={clsx(
+        "flex flex-col items-start justify-start gap-1 rounded-2xl p-5",
+        type === "success"
+          ? "border border-emerald-300 bg-emerald-200 text-emerald-900"
+          : "border border-red-300 bg-red-200 text-red-900"
+      )}
+    >
+      <h4 className="text-xl font-bold sm:text-2xl">{title}</h4>
+      <p>{message}</p>
+    </div>
+  );
+}
+
 function ContactForm({ className = "" }: { className?: string }) {
   const [isMailSent, setIsMailSent] = useState(false);
   const [formError, setFormError] = useState(false);
@@ -21,6 +47,9 @@ function ContactForm({ className = "" }: { className?: string }) {
   const formRef = useRef<HTMLFormElement>(null);
 
   const t = useTranslation();
+
+  const router = useRouter();
+  const lang = router.locale;
 
   // Honeypot refs
   const hnyNameRef = useRef<HTMLInputElement>(null);
@@ -56,7 +85,7 @@ function ContactForm({ className = "" }: { className?: string }) {
         .then(
           // Success
           () => {
-            setIsMailSent(true);
+            router.push(`/${lang}/odeslany-formular`);
             e.target.reset();
             setIsLoading(false);
           },
@@ -148,6 +177,20 @@ function ContactForm({ className = "" }: { className?: string }) {
         <Button size="lg" type="submit" isLoading={isLoading}>
           {t.index.contect.form.submitButton}
         </Button>
+        {isMailSent && (
+          <Alert
+            type="success"
+            title={t.index.contect.form.successAlert.heading}
+            message={t.index.contect.form.successAlert.text}
+          />
+        )}
+        {formError && (
+          <Alert
+            type="error"
+            title={t.index.contect.form.errorAlert.heading}
+            message={t.index.contect.form.errorAlert.text}
+          />
+        )}
       </form>
     </div>
   );

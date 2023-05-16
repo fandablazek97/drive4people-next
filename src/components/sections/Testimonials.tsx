@@ -1,5 +1,6 @@
 import { useTranslation } from "@/hooks/useTranslation";
 import clsx from "clsx";
+import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import SwiperCore, { A11y, Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,6 +17,12 @@ function Avatar({
   name: string;
   className?: string;
 }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const initials = name
     .split(" ")
     .map((n, i) => (i === 0 || i === name.split(" ").length - 1 ? n[0] : ""))
@@ -32,6 +39,18 @@ function Avatar({
     "bg-purple-600",
     "bg-pink-600",
   ];
+
+  if (!mounted)
+    return (
+      <div
+        className={clsx(
+          "flex h-12 w-12 items-center justify-center rounded-full bg-primary text-lg uppercase text-white",
+          className
+        )}
+      >
+        <span>{initials}</span>
+      </div>
+    );
 
   return (
     <div

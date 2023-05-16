@@ -92,7 +92,7 @@ const Checkbox = forwardRef<Ref, CheckboxProps>(
           ${!hasHiddenLabel && isDisabled ? "cursor-auto" : "cursor-pointer"}
           `}
         >
-          {isRequired && <span className="text-error mr-1">*</span>}
+          {isRequired && <span className="mr-1 text-red-500">*</span>}
           <span>{label}</span>
         </label>
       </div>

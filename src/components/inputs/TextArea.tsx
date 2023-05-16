@@ -90,7 +90,7 @@ const TextArea = forwardRef<Ref, TextAreaProps>(
             }`}
           >
             <span>{label}</span>
-            {isRequired && <span className="text-error">*</span>}
+            {isRequired && <span className="text-red-500">*</span>}
           </label>
         )}
 
@@ -126,14 +126,16 @@ const TextArea = forwardRef<Ref, TextAreaProps>(
         {hasFloatingLabel && (
           <label htmlFor={id} className={`${cvs.floatingLabel.label}`}>
             <span>{label}</span>
-            {isRequired && <span className="text-error">*</span>}
+            {isRequired && <span className="ml-1 text-red-500">*</span>}
           </label>
         )}
 
         {/* Helper text */}
         {helperText !== null && (
           <div
-            className={`mt-2 text-sm ${isInvalid ? "text-error" : "text-copy"}`}
+            className={`mt-2 text-sm ${
+              isInvalid ? "text-red-500" : "text-copy"
+            }`}
           >
             {helperText}
           </div>

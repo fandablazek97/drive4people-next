@@ -219,6 +219,17 @@ export const cs = {
         gdprLabel: "Souhlasím s podmínkami",
         gdprLink: "ochrany osobních údajů.",
         submitButton: "Odeslat",
+        // Success message
+        successAlert: {
+          heading: "Formulář byl úspěšně odeslán",
+          text: "Děkujeme za vyplnění formuláře. Ozveme se vám co nejdříve to půjde.",
+          backToHomePage: "Zpět na hlavní stránku",
+        },
+        // Error messages
+        errorAlert: {
+          heading: "Něco se nepovedlo",
+          text: "Formulář se nepodařilo odeslat, zkuste to později, nebo využijte jiný způsob kontaktu.",
+        },
       },
       billingInfo: {
         heading: "Fakturační údaje",

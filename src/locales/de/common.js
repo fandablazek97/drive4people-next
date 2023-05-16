@@ -219,6 +219,17 @@ export const de = {
         gdprLabel: "Ich stimme den Bedingungen zu",
         gdprLink: "schutz personenbezogener Daten.",
         submitButton: "Senden",
+        // Success message
+        successAlert: {
+          heading: "Das Formular wurde erfolgreich gesendet",
+          text: "Vielen Dank, dass Sie das Formular ausgefüllt haben. Wir werden uns schnellstmöglich bei Ihnen melden.",
+          backToHomePage: "Zurück zur Hauptseite",
+        },
+        // Error messages
+        errorAlert: {
+          heading: "Etwas ist schief gelaufen",
+          text: "Das Formular konnte nicht gesendet werden. Bitte versuchen Sie es später noch einmal oder verwenden Sie eine andere Kontaktmethode.",
+        },
       },
       billingInfo: {
         heading: "Abrechnungsdaten",

@@ -14,7 +14,7 @@ type HeadingProps = {
 const componentVariants = {
   base: "block font-extrabold font-sans",
   size: {
-    xs: "text-base",
+    xs: "text-base sm:text-xl",
     sm: "text-xl lg:text-2xl",
     md: "text-2xl sm:text-3xl lg:text-4xl",
     lg: "text-3xl sm:text-4xl lg:text-6xl",

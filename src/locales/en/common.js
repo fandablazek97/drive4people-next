@@ -219,6 +219,17 @@ export const en = {
         gdprLabel: "I agree with terms and conditions described in our",
         gdprLink: "privacy policy.",
         submitButton: "Submit",
+        // Success message
+        successAlert: {
+          heading: "The form was sent successfully",
+          text: "Thank you for filling out the form. We will get back to you as soon as possible.",
+          backToHomePage: "Back to the main page",
+        },
+        // Error messages
+        errorAlert: {
+          heading: "Something went wrong",
+          text: "The form could not be submitted, please try again later or use another contact method.",
+        },
       },
       billingInfo: {
         heading: "Billing information",

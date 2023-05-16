@@ -22,10 +22,6 @@ module.exports = {
           ...colors.indigo,
         },
       },
-      backgroundImage: {
-        "hero-pattern-white": "url('/pattern/japan-pattern-white.svg')",
-        "hero-pattern-black": "url('/pattern/japan-pattern-black.svg')",
-      },
       opacity: {
         15: "0.15",
         35: "0.35",
@@ -68,5 +64,7 @@ module.exports = {
     require("@tailwindcss/forms")({
       strategy: "class", // only generate classes -> https://github.com/tailwindlabs/tailwindcss-forms
     }),
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    require("@tailwindcss/typography"),
   ],
 };

@@ -1,13 +1,8 @@
 export const siteConfig = {
   seo: {
-    url: "https://www.pragers.cz",
-    shortUrl: "pragers.cz",
-    titleTemplate: "%s | Prager's",
+    url: "https://www.drive4people.cz",
+    shortUrl: "drive4people.cz",
+    titleTemplate: "%s | Drive4people",
     defaultDescription: "Popis webu",
-  },
-  theme: {
-    domainKey: "pragers",
-    enableSystemTheme: true,
-    disableTransitionOnChange: true,
   },
 };
