@@ -1,4 +1,5 @@
 import { useTranslation } from "@/hooks/useTranslation";
+import Image from "next/image";
 import Container from "../Container";
 import Heading from "../Heading";
 import PreHeading from "../PreHeading";
@@ -8,48 +9,48 @@ export default function Drivers() {
   const t = useTranslation();
   return (
     <section className="w-screen bg-white">
-      <Container id="ridici" py="lg">
-        <Reveal>
+      <Container
+        id="ridici"
+        py="lg"
+        className="grid gap-x-8 gap-y-14 lg:grid-cols-2"
+      >
+        <Reveal className="col-span-1">
           <PreHeading level={2}>{t.index.drivers.preHeading}</PreHeading>
           <Heading level={"none"} size="md" hasMarginBottom>
             {t.index.drivers.heading}
           </Heading>
-          <p>{t.index.drivers.perex}</p>
+          <p className="max-w-prose">{t.index.drivers.perex}</p>
         </Reveal>
 
-        <div className="mt-24 grid grid-cols-1 gap-16 md:grid-cols-2">
-          {/* <Reveal>
-        <StaticImage
-          src="../../../assets/images/golf/golf-1.jpg"
-          alt="Lukáš Jiránek"
-          placeholder="blurred"
-          loading="lazy"
-          layout="fullWidth"
-          className="aspect-[4/3]"
-          objectFit="cover"
-          objectPosition="50% 50%"
-        />
-      </Reveal>
+        <Reveal className="relative col-span-1">
+          <Image
+            src="/img/d4p-2023-2.jpg"
+            width="1920"
+            height="1280"
+            alt="group photo of our drivers"
+            className="relative z-10 rounded-3xl"
+          />
+          <div className="absolute -bottom-6 -right-6 h-full w-full rounded-3xl bg-primary" />
+        </Reveal>
 
-      <Reveal className="md:reveal-delay-300">
-        <h3 className="ui-heading text-primary" data-heading="lg">
-          Lukáš Jiránek, 25 let
-        </h3>
-        <h4 className="ui-heading">Zkušenosti</h4>
-        <ul className="marker:text-primary ml-8 list-disc">
-          <li>6 let aktivní řidič</li>
-          <li>Roční nájezd 60 – 80 tis. Km</li>
-          <li>
-            Zkušenosti s řízením jak osobních, tak užitkových vozů na krátké i
-            dlouhé vzdálenosti
-          </li>
-          <li>Zkušenosti s řízením ve velkých městech</li>
-          <li>
-            Dlouhodobě působí jako řidič pro osobní přepravu osob v Praze
-          </li>
-          <li>Komunikace v německém a anglickém jazyce</li>
-        </ul>
-      </Reveal> */}
+        <div className="col-span-2 mt-16 grid gap-8 xs:grid-cols-2 lg:grid-cols-3">
+          {t.index.drivers.drivers.map((driver) => (
+            <div
+              key={driver.name}
+              className="col-span-1 flex flex-col items-start"
+            >
+              <Image
+                src={driver.src}
+                width="1920"
+                height="1280"
+                alt={driver.name}
+                className="rounded-3xl"
+              />
+              <Heading level={"none"} size="sm" className="mt-4">
+                {driver.name}
+              </Heading>
+            </div>
+          ))}
         </div>
       </Container>
     </section>

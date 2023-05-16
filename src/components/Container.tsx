@@ -18,7 +18,7 @@ const componentVariants = {
   size: {
     xs: "max-w-2xl",
     sm: "max-w-4xl",
-    md: "max-w-7xl",
+    md: "max-w-[1344px]",
     lg: "max-w-[1728px]",
     fluid: "",
   },
@@ -46,7 +46,7 @@ const componentVariants = {
 };
 
 export default function Container({
-  as: Tag = "div",
+  as: AsElement = "div",
   size = "md",
   isInner = false,
   py = "none",
@@ -66,8 +66,8 @@ export default function Container({
     className
   );
   return (
-    <Tag className={classNames} {...rest}>
+    <AsElement className={classNames} {...rest}>
       {children}
-    </Tag>
+    </AsElement>
   );
 }

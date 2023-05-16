@@ -9,9 +9,9 @@ export default function Services() {
   return (
     <Container as={"section"} py={"lg"} id="sluzby">
       <Reveal>
-        <PreHeading level={2}>Služby</PreHeading>
+        <PreHeading level={2}>{t.index.services.preHeading}</PreHeading>
         <Heading level={"none"} size="md">
-          Co pro vás můžeme udělat?
+          {t.index.services.heading}
         </Heading>
       </Reveal>
 

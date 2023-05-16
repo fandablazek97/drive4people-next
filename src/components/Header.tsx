@@ -295,7 +295,7 @@ export default function Header() {
     <nav
       className={clsx(
         "fixed inset-x-0 top-0 isolate z-fixed w-full py-2.5 transition duration-500 ease-out lg:py-4",
-        isScrolled ? "bg-gray-900/95 backdrop-blur-lg" : "",
+        isScrolled ? "bg-gray-950/80 backdrop-blur-lg" : "",
         !isVisible && "-translate-y-full"
       )}
     >

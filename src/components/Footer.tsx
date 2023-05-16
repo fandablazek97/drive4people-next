@@ -3,6 +3,7 @@ import Container from "./Container";
 import Link from "./Link";
 
 function RevealMark({ className = "" }: { className?: string }) {
+  const t = useTranslation();
   return (
     <a
       href="https://reveal.cz"
@@ -17,7 +18,7 @@ function RevealMark({ className = "" }: { className?: string }) {
         height="10"
         className="mr-3 inline -translate-y-0.5"
       />
-      <span>Vytvořili Reveal</span>
+      <span>{t.common.footer.revealSignature}</span>
     </a>
   );
 }

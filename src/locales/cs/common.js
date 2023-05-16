@@ -51,34 +51,34 @@ export const cs = {
       heading: "Co pro vás můžeme udělat?",
       services: [
         {
-          heading: "Přeprava na/z letiště v rámci evropy",
-          text: "Potřebujete osobní přepravu na letiště, ale nechcete se zdržovat plánovaním cesty a parkováním svého auta na letišti? Pak je tato služba dělaná přesně Vám na míru.",
-          icon: FaPlane,
-        },
-        {
-          heading: "Svatby",
-          text: "Hledáte vhodný vůz pro novomanžele nebo svatební hosty? Pro tuto sváteční příležitost Vám zajistíme komfortní vůz s řidičem v obleku, který Vám bude po celou dobu profesionálně k dispozici.",
-          icon: FaHeart,
+          heading: "Osobní řidič Vašeho vozu",
+          text: "Nabízíme luxusní přepravu s řidičem ve Vašem vlastním voze. Můžete si tak užít výhody Vašeho vlastního vozu, aniž byste museli řídit a starat se o parkování. Naši zkušení řidiči zajistí Vaše pohodlí a bezpečí při cestování na jakémkoliv místě v Evropě. Jsme k dispozici pro jednotlivce i skupiny, a to kdykoliv vám vyhovuje. S námi máte jistotu, že dorazíte včas a bez stresu na Vaše místo určení",
+          icon: FaCar,
         },
         {
           heading: "Osobní řidič s naším vozem",
-          text: "Máte důležité jednání, na které se potřebujete soustředit a připravit? Nabízíme možnost profesionálního osobního řidiče, který za Vás naplánuje cestu a zajistí komfortní a bezpečnou přepravu v rámci České republiky a Evropy",
+          text: "Naše firma Vám nabízí pohodlnou a spolehlivou přepravu s profesionálním řidičem a moderním vozem. Nemusíte se starat o hledání parkovacího místa nebo o jízdu v neznámém městě, náš zkušený řidič se o vše postará. Nabízíme výběr z různých typů vozidel, aby byla vaše přeprava co nejpohodlnější. S naším osobním řidičem se můžete spolehnout na přesnost, rychlost a bezpečnost při přepravě na jakémkoliv místě v Evropě. ",
           icon: FaCompass,
         },
         {
+          heading: "Přeprava na/z letiště v rámci evropy",
+          text: "Vyhněte se stresu s plánováním cesty na letiště. Zajistíme pro Vás přepravu na/z letiště v rámci Evropy s pohodlným a spolehlivým servisem, který odpovídá Vašim potřebám. S námi si můžete užít příjemnou a bezstarostnou cestu, aniž byste museli řešit parkování nebo hledat správnou trasu.",
+          icon: FaPlane,
+        },
+        {
           heading: "Expresní kurýr",
-          text: "Máte důležitou zásilku, kterou potřebujete rychle a bezpečně dostat na druhou stranu republiky nebo Evropy. I takovou službu pro Vás zařídíme.",
+          text: "Pokud máte naléhavou zásilku, kterou potřebujete spolehlivě doručit na vzdálené místo v rámci České republiky nebo dokonce v Evropě, máme pro Vás řešení. Naše společnost nabízí expresní kurýrní službu, která Vám umožní doručení Vaší důležité zásilky rychle a bezpečně na cílovou adresu.",
           icon: FaShoppingBag,
         },
         {
-          heading: "Firemní večírky a oslavy",
-          text: "Pro firemní či rodinné akce, zajistíme dopravu od včasného vyzvednutí, po bezpečnou a komfortní přepravu přímo ke dveřím.",
-          icon: FaGlassMartiniAlt,
+          heading: "Svatby",
+          text: "Máme připraveny komfortní svatební vozy s profesionálním řidičem v obleku, aby Váš svatební den byl dokonalý. Postaráme se o to, abyste Vy a Vaši hosté dorazili ke svatebnímu obřadu v pohodlí a stylu.",
+          icon: FaHeart,
         },
         {
-          heading: "Osobní řidič Vašeho vozu",
-          text: "Více informací na info@drive4people.cz",
-          icon: FaCar,
+          heading: "Firemní večírky a oslavy",
+          text: "Při organizaci firemních nebo rodinných akcí Vám rádi zajistíme bezpečnou a komfortní přepravu přímo ke dveřím. Od včasného vyzvednutí až po doručení na místo určení, můžete spolehnout na naši spolehlivost a profesionální přístup.",
+          icon: FaGlassMartiniAlt,
         },
       ],
     },
@@ -175,7 +175,21 @@ export const cs = {
       preHeading: "Řidiči",
       heading: "Kdo Vás poveze?",
       perex:
-        "Řidič pro vás vždy přijede vhodně oblečen s profesionálním a osobním přístupem.",
+        "Naše společnost si zakládá na profesionálním přístupu a kvalitním zákaznickém servisu. Proto máme ve svém týmu pouze zkušené a spolehlivé řidiče, kteří jsou dobře obeznámeni s evropskými silnicemi a dodržují přísné bezpečnostní standardy. Naši řidiči jsou vždy ochotni pomoci s naložením zavazadel a poskytnou vám maximální pohodlí a bezpečnost během vaší cesty. S naším týmem řidičů si můžete být jisti, že dorazíte na čas a bez stresu na vaše místo určení.",
+      drivers: [
+        {
+          name: "Lukáš Jiránek",
+          src: "/img/d4p-2023-5.jpg",
+        },
+        {
+          name: "Nguyen Manh Tien",
+          src: "/img/d4p-2023-6.jpg",
+        },
+        {
+          name: "Matěj Bedrník",
+          src: "/img/d4p-2023-7.jpg",
+        },
+      ],
     },
 
     // CarFleet section
@@ -195,7 +209,7 @@ export const cs = {
       preHeading: "Kontakt",
       heading: "Pojďte se s námi svézt",
       phoneHeading: "Telefon:",
-      emailHeading: "Email:",
+      emailHeading: "E-mail:",
       form: {
         heading: "Máte dotaz?",
         nameSurnameInput: "Jméno a příjmení",

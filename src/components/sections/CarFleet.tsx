@@ -8,21 +8,23 @@ import Reveal from "../Reveal";
 export default function CarFleet() {
   const t = useTranslation();
   return (
-    <section id="vozy" className="bg-gray-800">
+    <section id="vozy" className="bg-gray-900">
       <Container py="lg">
         <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
           <Reveal>
             <PreHeading level={2} color="white" className="opacity-75">
-              {t.index.drivers.preHeading}
+              {t.index.carFleet.preHeading}
             </PreHeading>
             <Heading level={"none"} size="md" color="white" hasMarginBottom>
               {t.index.carFleet.heading}
             </Heading>
-            <p className="pt-3 leading-relaxed text-gray-300">
+          </Reveal>
+          <Reveal>
+            <p className="pt-3 text-lg leading-relaxed text-gray-300">
               {t.index.carFleet.perex}
             </p>
           </Reveal>
-          <Reveal>
+          {/* <Reveal>
             <Heading level={3} size="sm" color="primary" hasMarginBottom>
               Vozidlo je pro Vás vždy dokonale připravené.
             </Heading>
@@ -41,7 +43,7 @@ export default function CarFleet() {
                 terminál, Denní tisk
               </li>
             </ul>
-          </Reveal>
+          </Reveal> */}
         </div>
 
         <Reveal className="ui-heading mt-28">
@@ -57,7 +59,7 @@ export default function CarFleet() {
               width={1920}
               height={1280}
               loading="lazy"
-              className="aspect-[3/2]"
+              className="rounded-3xl"
             />
           </Reveal>
 
@@ -68,7 +70,7 @@ export default function CarFleet() {
               width={1920}
               height={1280}
               loading="lazy"
-              className="aspect-[3/2]"
+              className="rounded-3xl"
             />
           </Reveal>
         </div>
@@ -86,7 +88,7 @@ export default function CarFleet() {
               width={1920}
               height={1280}
               loading="lazy"
-              className="aspect-[3/2]"
+              className="rounded-3xl"
             />
           </Reveal>
 
@@ -97,7 +99,7 @@ export default function CarFleet() {
               width={1920}
               height={1280}
               loading="lazy"
-              className="aspect-[3/2]"
+              className="rounded-3xl"
             />
           </Reveal>
         </div>

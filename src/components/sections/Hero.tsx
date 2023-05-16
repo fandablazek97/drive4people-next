@@ -26,7 +26,7 @@ export default function Hero() {
         </div>
       </Container>
 
-      <div className="absolute inset-0 z-10 h-full w-full bg-gray-900/70"></div>
+      <div className="bg-gray-950/65 absolute inset-0 z-10 h-full w-full"></div>
 
       <Image
         src="/img/d4p-2023-1.jpg"

@@ -10,21 +10,21 @@ import {
 export const de = {
   common: {
     routes: [
-      { href: "/#sluzby", label: "Services" },
-      { href: "/#cenik", label: "Price list" },
-      { href: "/#reference", label: "Testimonials" },
-      { href: "/#ridici", label: "Drivers" },
-      { href: "/#vozy", label: "Car fleet" },
-      { href: "/#kontakt", label: "Contact" },
+      { href: "/#sluzby", label: "Dienstleistungen" },
+      { href: "/#cenik", label: "Preisliste" },
+      { href: "/#reference", label: "Referenzen" },
+      { href: "/#ridici", label: "Fahrer" },
+      { href: "/#vozy", label: "Unser fuhrpark" },
+      { href: "/#kontakt", label: "Kontakt" },
     ],
     footer: {
       links: [
         {
           href: "/gdpr",
-          label: "Privacy policy",
+          label: "Datenschutz-Bestimmungen",
         },
       ],
-      revealSignature: "Vytvořili reveal",
+      revealSignature: "Erstellt von Reveal",
     },
   },
 
@@ -32,158 +32,172 @@ export const de = {
   index: {
     // Seo
     seo: {
-      title: "Přepravíme odkudkoli kamkoli",
+      title: "Wir versenden von überall nach überall",
       description:
-        "Drive4people se zaměřuje se na přepravu osob v rámci Evropy. Nabízíme služby osobního řidiče, expresního kurýra, přepravu na svatby, večírky nebo letiště.",
+        "Wir bieten Ihnen eine bequeme, sichere und schnelle Personenbeförderung in ganz Europa an. Wir sind ein junges, dynamisches Unternehmen, das sich ständig weiterentwickelt, um Ihnen die modernsten Transportmöglichkeiten anbieten zu können.",
     },
 
     // Hero section
     hero: {
-      heading: "Přepravíme odkudkoli kamkoli",
+      heading: "Wir versenden von überall nach überall",
       perex:
-        "Jsme mladá, rozvíjející se společnost, která se zaměřuje na komfortní, bezpečnou a rychlou přepravu osob v rámci Evropy.",
-      button: "Zjistit více",
+        "Wir bieten Ihnen eine bequeme, sichere und schnelle Personenbeförderung in ganz Europa an. Wir sind ein junges, dynamisches Unternehmen, das sich ständig weiterentwickelt, um Ihnen die modernsten Transportmöglichkeiten anbieten zu können.",
+      button: "Ich interessiere mich",
     },
 
     // Services section
     services: {
-      preHeading: "Služby",
-      heading: "Co pro vás můžeme udělat?",
+      preHeading: "Dienstleistungen",
+      heading: "Was können wir für sie machen?",
       services: [
         {
-          heading: "Přeprava na/z letiště v rámci evropy",
-          text: "Lorem ipsum dolor",
-          icon: FaPlane,
+          heading: "Persönlicher Fahrer Ihres Wagen",
+          text: "Wir bieten luxuriösen Chauffeur-Service in Ihrem eigenen Fahrzeug an. Sie können die Vorteile Ihres eigenen Fahrzeugs genießen, ohne fahren oder sich um das Parken kümmern zu müssen. Unsere erfahrenen Fahrer sorgen für Ihr Komfort und Sicherheit während der Reise an jedem Ort in Europa. Wir sind für Einzelpersonen und Gruppen jederzeit verfügbar. Mit uns haben Sie die Gewissheit, dass Sie pünktlich und stressfrei an Ihrem Zielort ankommen werden.",
+          icon: FaCar,
         },
         {
-          heading: "Svatby",
-          text: "Lorem ipsum dolor",
-          icon: FaHeart,
-        },
-        {
-          heading: "Osobní řidič s naším vozem",
-          text: "Lorem ipsum dolor",
+          heading: "Persönlicher Fahrer mit unserem Wagen",
+          text: "Unser Unternehmen bietet Ihnen bequemen und zuverlässigen Transport mit professionellem Fahrer und modernem Fahrzeug an. Sie müssen sich keine Sorgen um die Suche nach einem Parkplatz oder das Fahren in einer unbekannten Stadt machen, unser erfahrener Fahrer kümmert sich um alles. Wir bieten eine Auswahl an verschiedenen Fahrzeugtypen, um Ihren Transport so bequem wie möglich zu gestalten. Mit unserem persönlichen Fahrer können Sie sich auf Präzision, Schnelligkeit und Sicherheit bei der Beförderung an jedem Ort in Europa verlassen.",
           icon: FaCompass,
         },
         {
-          heading: "Expresní kurýr",
-          text: "Lorem ipsum dolor",
+          heading: "Flughafentransporte innerhalb Europas",
+          text: "Vermeiden Sie den Stress der Planung Ihrer Reise zum Flughafen. Wir werden Ihnen Transport zum/vom Flughafen innerhalb Europas mit bequemem und zuverlässigem Service, der Ihren Bedürfnissen entspricht, bereitstellen. Mit uns können Sie eine angenehme und sorgenfreie Reise genießen, ohne sich um das Parken oder das Finden der richtigen Route kümmern zu müssen.",
+          icon: FaPlane,
+        },
+        {
+          heading: "Express-kurier",
+          text: "Wenn Sie eine dringende Sendung haben, die Sie zuverlässig an einen entfernten Ort innerhalb der Tschechischen Republik oder sogar in Europa liefern müssen, haben wir die Lösung für Sie. Unser Unternehmen bietet einen Express-Kurierdienst an, mit dem Sie Ihre wichtige Sendung schnell und sicher an die Zieladresse liefern können.",
           icon: FaShoppingBag,
         },
         {
-          heading: "Firemní večírky a oslavy",
-          text: "Lorem ipsum dolor",
-          icon: FaGlassMartiniAlt,
+          heading: "Hochzeiten",
+          text: "Wir haben komfortable Hochzeitsautos mit professionellen Fahrern in Anzügen bereitgestellt, damit Ihr Hochzeitstag perfekt wird. Wir werden dafür sorgen, dass Sie und Ihre Gäste bequem und stilvoll zur Hochzeitszeremonie gelangen.",
+          icon: FaHeart,
         },
         {
-          heading: "Osobní řidič Vašeho vozu",
-          text: "Lorem ipsum dolor",
-          icon: FaCar,
+          heading: "Firmenfeiern und Feste",
+          text: "Bei der Organisation von Firmen- oder Familienveranstaltungen bieten wir Ihnen gerne eine sichere und komfortable Transportlösung direkt bis zur Haustür an. Vom rechtzeitigen Abholen bis zur Lieferung am Zielort können Sie sich auf unsere Zuverlässigkeit und professionelle Herangehensweise verlassen.",
+          icon: FaGlassMartiniAlt,
         },
       ],
     },
 
     // Pricelist section
     priceList: {
-      preHeading: "Ceník",
-      heading: "Kolik to bude stát?",
+      preHeading: "Preisliste",
+      heading: "Wie viel wird es kosten?",
       perex:
-        "* Ceny jsou pouze orientační a upravují se podle požadavků zákazníků",
-      standardHeading: "Standardní služby",
+        "* Die Preise dienen nur zur Orientierung und werden an die Anforderungen des Kunde oder der Kundin angepasst",
+      standardHeading: "Standarddienste",
       standardPrices: [
         {
-          item: "Osobní řidič s naším vozem",
-          price: "od 800 Kč / hod",
+          item: "Persönlicher Fahrer mit unserem Wagen",
+          price: "von 800 CZK / std.",
         },
         {
-          item: "Osobní řidič Vašeho vozidla",
-          price: "400 kč / hod",
+          item: "Persönlicher Fahrer Ihres Wagen",
+          price: "400 CZK / std.",
         },
         {
-          item: "Svatby",
-          price: "od 800 kč / hod",
+          item: "Hochzeiten",
+          price: "von 800 CZK / std.",
         },
         {
-          item: "Firmení večírky a oslavy",
-          price: "od 800 Kč / hod",
+          item: "Firmenfeiren und Feste",
+          price: "von 800 CZK / std.",
         },
         {
-          item: "Expresní kurýr",
-          price: "dle specifikace",
+          item: "Express kurier – auf Anfrage",
+          price: "gemäß spezifikationod",
         },
       ],
-      airportHeading: "Letiště",
+      airportHeading: "Flughafen",
       airportPrices: [
         {
-          item: "Praha -> Letiště Václava Havla",
-          price: "od 800 Kč / hod",
+          item: "Prag -> Flughafen Václava Havla",
+          price: "von 800 CZK",
         },
         {
-          item: "Praha -> Letiště Vídeň",
-          price: "8150 kč",
+          item: "Prag -> Flughafen Wien",
+          price: "8150 CZK",
         },
         {
-          item: "Praha -> Letiště Mnichov",
-          price: "8800 kč",
+          item: "Prag -> Flughafen München",
+          price: "8800 CZK",
         },
       ],
     },
 
     // Testimonials section
     testimonials: {
-      preHeading: "Reference",
-      heading: "Co řikají klienti",
-      perex: "* Původ referencí - hodnocení firem google",
+      preHeading: "Referenzen",
+      heading: "Ihre meinung",
+      perex: "* Herkunft von Referenzen - Bewertung von Google-Unternehmen",
       testimonials: [
         {
           name: "Jan Hrubeš",
-          text: "Skvělá domluva, rychlost, spolehlivost, profesionalita, vysoká kvalita 💯 byli jsme velmi spokojeni, díky 👏👍",
+          text: "Great deal, speed, reliability, professionalism, high quality 💯 we were very satisfied, thanks 👏👍",
         },
         {
           name: "Kateřina Juránková",
-          text: "Dokonala profi jizda, dokonala cistota interieru, velmi prijemne vystupovani, spolehlivost, stoprocentni servis jak ma byt a jako bonus, velmi sympaticky a pohledny mlady muz...",
+          text: "Perfect professional ride, perfect cleanliness of the interior, very pleasant performance, reliability, 100% service as it should be and like bonus, very nice and handsome young man ...",
         },
         {
           name: "Alexandr Kučera",
-          text: "Skvělý profesionální přístup a vždy dobrá nálada. Drive4people můžu jedině doporučit.",
+          text: "Great professional approach and always a good mood. Drive4people I can only recommend.",
         },
         {
           name: "Marek Sahula",
-          text: "Výborný a profesionální přístup. Pan řidič přijel na domluvený čas, byl usměvavý a po celou dobu velmi příjemný. Tuto společnost lze jedině doporučit.",
+          text: "Excellent and professional approach. The driver arrived on time, he was smiling and very nice all the time. This company can only recommend.",
         },
         {
           name: "Jiří Sandanus",
-          text: "Služba byla úžasná, vše proběhlo k naší naprosté spokojenosti. Mohu všem jen doporučit.",
+          text: "The service was amazing, everything went to our complete satisfaction. I can just recommend to everyone.",
         },
         {
           name: "Tobiáš bartoš",
-          text: "Od prvního setkání Naprostá profesionalita!. Pan Lukáš je Velice příjemný a spolehlivý. Kvalitni repretentace firmy. Takových více Profi řidičů. Kodlova",
+          text: "From the first meeting Absolute professionalism !. Mr. Luke is Very pleasant and reliable. Quality representation of the company. More like that Professional drivers.",
         },
         {
           name: "Lukáš Kousal",
-          text: "(Přeloženo pomocí google) <br /> Pravidelně chodím do této společnosti. A jsem vždy spokojen s přesností. Vždy mě potkávají ve všech požadavcích a náhlých změnách. Mohu jen DOPORUČIT!",
+          text: "(Translated by google) - I go to this company regularly. AND I am always satisfied with the accuracy. They always meet me in all demands and sudden changes. I can only recommend!",
         },
         {
           name: "Hana Bluchová",
-          text: "Velká spokojenost, jízda byla bez problémů, spolehlivost, profesionální.",
+          text: "Great satisfaction, the ride was without problems, reliability, professional.",
         },
       ],
     },
 
     // Drivers section
     drivers: {
-      preHeading: "Řidiči",
-      heading: "Kdo Vás poveze?",
+      preHeading: "Fahrer",
+      heading: "Wer wird sie oder ihre sendung befördern?",
       perex:
-        "Řidič pro vás vždy přijede vhodně oblečen s profesionálním a osobním přístupem.",
+        "Unser Unternehmen ist stolz auf seinen professionellen Ansatz und seinen hochwertigen Kundenservice. Deshalb haben wir in unserem Team nur erfahrene und zuverlässige Fahrer, die sich mit den europäischen Straßen gut auskennen und strenge Sicherheitsstandards einhalten. Unsere Fahrer sind immer bereit, beim Einladen von Gepäck zu helfen, und sorgen während Ihrer Reise für maximalen Komfort und Sicherheit. Mit unserem Fahrerteam können Sie sicher sein, dass Sie pünktlich und stressfrei an Ihrem Ziel ankommen werden.",
+      drivers: [
+        {
+          name: "Lukáš Jiránek",
+          src: "/img/d4p-2023-5.jpg",
+        },
+        {
+          name: "Nguyen Manh Tien",
+          src: "/img/d4p-2023-6.jpg",
+        },
+        {
+          name: "Matěj Bedrník",
+          src: "/img/d4p-2023-7.jpg",
+        },
+      ],
     },
 
     // CarFleet section
     carFleet: {
-      preHeading: "Vozový park",
-      heading: "Čím Vás povezeme?",
+      preHeading: "Unser fuhrpark",
+      heading: "Über welche fahrzeuge verfügen wir?",
       perex:
-        "Jsme schopni zajistit pro Vás dopravu jakýmkoliv vozidlem, ať už potřebujete osobní vůz nebo vícecestný minibus. Navíc nově připravujeme profesionální přepravu zboží po celé Evropě, kterou zajišťujeme moderními dodávkami. Můžete se spolehnout na naši spolehlivost a pečlivý přístup k Vašim potřebám.",
+        "Wir können Ihnen Transportdienstleistungen mit jedem Fahrzeugtyp anbieten, sei es ein Personenkraftwagen oder ein Mehrzweck-Minibus. Außerdem planen wir derzeit den professionellen Warentransport in ganz Europa, den wir mit modernen Lieferwagen durchführen. Sie können sich auf unsere Zuverlässigkeit und sorgfältige Herangehensweise an Ihre Bedürfnisse verlassen.",
       cars: {
         car1: "Volkswagen Passat Variant, 2019",
         car2: "Mercedes-Benz E Class 220D – 2019",
@@ -193,21 +207,21 @@ export const de = {
     // Contact section
     contect: {
       preHeading: "Kontakt",
-      heading: "Pojďte se s námi svézt",
+      heading: "Steigen sie ein und fahren sie mit uns",
       phoneHeading: "Telefon:",
-      emailHeading: "Email:",
+      emailHeading: "E-mail:",
       form: {
-        heading: "Máte dotaz?",
-        nameSurnameInput: "Jméno a příjmení",
-        emailInput: "Váš e-mail",
-        phoneInput: "Váš telefon",
-        messageInput: "Vaše zpráva",
-        gdprLabel: "Souhlasím s podmínkami",
-        gdprLink: "ochrany osobních údajů.",
-        submitButton: "Odeslat",
+        heading: "Haben sie eine frage?",
+        nameSurnameInput: "Name und Nachname",
+        emailInput: "E-mail",
+        phoneInput: "Telefon",
+        messageInput: "Deine Nachricht",
+        gdprLabel: "Ich stimme den Bedingungen zu",
+        gdprLink: "schutz personenbezogener Daten.",
+        submitButton: "Senden",
       },
       billingInfo: {
-        heading: "Fakturační údaje",
+        heading: "Abrechnungsdaten",
         sro: {
           name: "Cardrive4people s.r.o",
           ico: "IČO: 17440858",

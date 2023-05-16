@@ -65,7 +65,7 @@ const componentVariants = {
     lg: "py-2.5 px-4 text-sm leading-5 md:py-3 md:px-5 md:text-base md:leading-6",
     xl: "py-3 px-5 text-base leading-6 md:py-4 md:px-6 md:text-lg md:leading-6",
   },
-  radius: "rounded-md",
+  radius: "rounded-lg",
   isFullWidth: "w-full",
   // Used for disabled and loading states
   isDisabled: "pointer-events-none opacity-50",

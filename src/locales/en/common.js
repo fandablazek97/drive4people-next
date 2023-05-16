@@ -24,7 +24,7 @@ export const en = {
           label: "Privacy policy",
         },
       ],
-      revealSignature: "Created by reveal",
+      revealSignature: "Created by Reveal",
     },
   },
 
@@ -34,14 +34,14 @@ export const en = {
     seo: {
       title: "We'll transport you everywhere",
       description:
-        "We are a young, growing company that focuses on comfortable, safe and fast passenger transport within Europe.",
+        "We will provide you with comfortable, safe, and fast transportation of people throughout Europe. We are a young, dynamic company that is constantly evolving to offer you the latest methods of transportation.",
     },
 
     // Hero section
     hero: {
       heading: "We'll transport you everywhere",
       perex:
-        "We are a young, growing company that focuses on comfortable, safe and fast passenger transport within Europe.",
+        "We will provide you with comfortable, safe, and fast transportation of people throughout Europe. We are a young, dynamic company that is constantly evolving to offer you the latest methods of transportation.",
       button: "Learn more",
     },
 
@@ -51,34 +51,34 @@ export const en = {
       heading: "What can we do for you?",
       services: [
         {
-          heading: "Transport to / from the airport within europe",
-          text: "Do you need a personal transfer to the airport, but do not want to delay planning your trip and parking your car at the airport? Then this service is made exactly for you.",
-          icon: FaPlane,
+          heading: "Personal driver for your own car",
+          text: "We offer luxury transportation with a driver in your own car. You can enjoy the benefits of your own vehicle without having to drive and worry about parking. Our experienced drivers ensure your comfort and safety when traveling anywhere in Europe. We are available for individuals and groups, anytime that suits you. With us, you can be sure to arrive at your destination on time and stress-free.",
+          icon: FaCar,
         },
         {
-          heading: "Weddings",
-          text: "Are you looking for a suitable car for newlyweds or wedding guests? For this festive occasion, we will provide you with a comfortable car including a driver in a suit, which will be professionally available to you at all times.",
-          icon: FaHeart,
-        },
-        {
-          heading: "Personal driver with our car",
-          text: "Do you have an important meeting that you need to focus and prepare on? We offer the possibility of a professional personal driver. He will plan your trip for you and ensure comfortable and safe transport within the Czech Republic and Europe.",
+          heading: "Personal driver with our vehicle",
+          text: "Our company offers you comfortable and reliable transportation with a professional driver and a modern vehicle. You don't have to worry about finding a parking spot or driving in an unfamiliar city, our experienced driver will take care of everything. We offer a selection of different types of vehicles to make your transportation as comfortable as possible. With our personal driver, you can rely on precision, speed, and safety when traveling anywhere in Europe.",
           icon: FaCompass,
         },
         {
+          heading: "Transportation to/from airports throughout Europe",
+          text: "Avoid the stress of planning your airport journey. We provide transportation to/from airports throughout Europe with a comfortable and reliable service that meets your needs. With us, you can enjoy a pleasant and worry-free journey without having to deal with parking or finding the right route.",
+          icon: FaPlane,
+        },
+        {
           heading: "Express courier",
-          text: "Do you have an important shipment that you need to get to the other side of the Republic or Europe quickly and safely? We can also arrange such a service for you.",
+          text: "If you have an urgent shipment that needs to be reliably delivered to a distant location within the Czech Republic or even Europe, we have a solution for you. Our company offers an express courier service that allows you to quickly and safely deliver your important shipment to its destination address.",
           icon: FaShoppingBag,
         },
         {
-          heading: "Corporate parties and celebrations",
-          text: "We also provide transportation for corporate or family events. From early pickup to safe and comfortable transportation directly to the door.",
-          icon: FaGlassMartiniAlt,
+          heading: "Weddings",
+          text: "We have comfortable wedding cars with a professional driver in a suit ready for you to make your wedding day perfect. We will ensure that you and your guests arrive at the wedding ceremony in comfort and style.",
+          icon: FaHeart,
         },
         {
-          heading: "Personal driver of your car",
-          text: "More information at info@drive4people.cz",
-          icon: FaCar,
+          heading: "Corporate parties and celebrations",
+          text: "When organizing corporate or family events, we are happy to provide you with safe and comfortable transportation right to the door. From timely pick-up to delivery to the destination, you can rely on our reliability and professional approach.",
+          icon: FaGlassMartiniAlt,
         },
       ],
     },
@@ -175,7 +175,21 @@ export const en = {
       preHeading: "Drivers",
       heading: "Who will be your driver?",
       perex:
-        "* The driver will always pick you up appropriately dressed with a professional and personal approach.",
+        "Our company values are professional approach and quality customer service. That's why we only have experienced and reliable drivers on our team who are well-versed in European roads and adhere to strict safety standards. Our drivers are always willing to help with loading luggage and provide you with maximum comfort and safety during your journey. With our team of drivers, you can be sure that you will arrive at your destination on time and without any stress.",
+      drivers: [
+        {
+          name: "Lukáš Jiránek",
+          src: "/img/d4p-2023-5.jpg",
+        },
+        {
+          name: "Nguyen Manh Tien",
+          src: "/img/d4p-2023-6.jpg",
+        },
+        {
+          name: "Matěj Bedrník",
+          src: "/img/d4p-2023-7.jpg",
+        },
+      ],
     },
 
     // CarFleet section
@@ -183,7 +197,7 @@ export const en = {
       preHeading: "Car fleet",
       heading: "Which car will we use?",
       perex:
-        "Jsme schopni zajistit pro Vás dopravu jakýmkoliv vozidlem, ať už potřebujete osobní vůz nebo vícecestný minibus. Navíc nově připravujeme profesionální přepravu zboží po celé Evropě, kterou zajišťujeme moderními dodávkami. Můžete se spolehnout na naši spolehlivost a pečlivý přístup k Vašim potřebám.",
+        "We are able to provide transportation for you with any type of vehicle, whether you need a personal car or a multi-passenger minibus. In addition, we are now preparing professional goods transportation throughout Europe, which we provide with modern delivery vans. You can rely on our reliability and careful approach to your needs.",
       cars: {
         car1: "Volkswagen Passat Variant, 2019",
         car2: "Mercedes-Benz E Class 220D – 2019",
@@ -207,7 +221,7 @@ export const en = {
         submitButton: "Submit",
       },
       billingInfo: {
-        heading: "Fakturační údaje",
+        heading: "Billing information",
         sro: {
           name: "Cardrive4people s.r.o",
           ico: "IČO: 17440858",
