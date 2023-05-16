@@ -24,7 +24,7 @@ export default function LanguageSwitcher({ className = "" }: Props) {
       onChange={changeLanguage}
       defaultValue={locale}
       className={clsx(
-        " bg-transparent text-sm font-semibold tracking-wide text-white",
+        "form-select border-none bg-transparent text-sm font-semibold tracking-wide text-white focus:border-none focus:ring-0",
         className
       )}
     >
