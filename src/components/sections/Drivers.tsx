@@ -12,7 +12,7 @@ export default function Drivers() {
       <Container
         id="ridici"
         py="lg"
-        className="grid gap-x-8 gap-y-14 lg:grid-cols-2"
+        className="grid grid-cols-1 gap-x-8 gap-y-14 lg:grid-cols-2"
       >
         <Reveal className="col-span-1">
           <PreHeading level={2}>{t.index.drivers.preHeading}</PreHeading>
@@ -35,7 +35,7 @@ export default function Drivers() {
           </div>
         </Reveal>
 
-        <div className="col-span-2 mt-16 grid gap-4 xs:grid-cols-2 sm:gap-8 lg:grid-cols-3">
+        <div className="col-span-1 mt-16 grid gap-4 xs:grid-cols-2 sm:gap-8 lg:col-span-2 lg:grid-cols-3">
           {t.index.drivers.drivers.map((driver) => (
             <div
               key={driver.name}
