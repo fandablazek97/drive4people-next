@@ -193,7 +193,7 @@ function TouchMenu() {
                     {/* <span className="mb-3 block text-xs uppercase opacity-60 sm:text-sm lg:mb-6">
                       {t.common.nav.menu}
                     </span> */}
-                    <ul className="flex flex-col items-start gap-y-2 xl:gap-y-5">
+                    <ul className="flex flex-col items-start gap-y-2 sm:gap-y-4 xl:gap-y-14">
                       {t.common.routes.map((route, i) => (
                         <li key={i}>
                           <TouchNavLink
@@ -230,7 +230,7 @@ function TouchMenu() {
                           key={i}
                           i={i}
                           hoverEffect="scale-down"
-                          className="sm:text-lg xl:text-xl"
+                          className="text-primary-400 sm:text-lg xl:text-xl"
                         >
                           {contactLink.label}
                         </Link>

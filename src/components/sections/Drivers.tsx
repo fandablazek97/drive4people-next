@@ -33,7 +33,7 @@ export default function Drivers() {
           <div className="absolute -bottom-6 -right-6 h-full w-full rounded-3xl bg-primary" />
         </Reveal>
 
-        <div className="col-span-2 mt-16 grid gap-8 xs:grid-cols-2 lg:grid-cols-3">
+        <div className="col-span-2 mt-16 grid gap-4 xs:grid-cols-2 sm:gap-8 lg:grid-cols-3">
           {t.index.drivers.drivers.map((driver) => (
             <div
               key={driver.name}
@@ -46,7 +46,7 @@ export default function Drivers() {
                 alt={driver.name}
                 className="rounded-3xl"
               />
-              <Heading level={"none"} size="sm" className="mt-4">
+              <Heading level={"none"} size="xs" className="mt-4">
                 {driver.name}
               </Heading>
             </div>

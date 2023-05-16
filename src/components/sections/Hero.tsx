@@ -12,11 +12,11 @@ export default function Hero() {
       className="relative h-screen min-h-[36rem] w-screen overflow-hidden"
     >
       <Container className="relative z-20 flex h-full flex-col items-start justify-center">
-        <h1 className="mb-10 max-w-3xl text-4xl font-bold leading-tight text-white md:text-6xl xl:text-7xl">
+        <h1 className="mb-10 max-w-4xl text-4xl font-bold leading-tight text-white md:text-6xl xl:text-7xl">
           {t.index.hero.heading}
         </h1>
         <div className="mb-10 h-1 w-24 bg-primary"></div>
-        <p className="mb-10 max-w-4xl text-xl text-gray-200">
+        <p className="mb-10 max-w-4xl text-base text-gray-200 sm:text-xl">
           {t.index.hero.perex}
         </p>
         <div>

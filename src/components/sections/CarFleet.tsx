@@ -51,7 +51,7 @@ export default function CarFleet() {
             {t.index.carFleet.cars.car1}
           </Heading>
         </Reveal>
-        <div className="mt-8 grid grid-cols-2 gap-8 ">
+        <div className="mt-8 grid gap-8 sm:grid-cols-2">
           <Reveal className="col-span-1">
             <Image
               src="/img/d4p-2023-8.jpg"
@@ -80,7 +80,7 @@ export default function CarFleet() {
             {t.index.carFleet.cars.car2}
           </Heading>
         </Reveal>
-        <div className="mt-8 grid grid-cols-2 gap-8 ">
+        <div className="mt-8 grid gap-8 sm:grid-cols-2">
           <Reveal className="col-span-1">
             <Image
               src="/img/d4p-2023-4.jpg"
