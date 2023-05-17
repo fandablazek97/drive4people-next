@@ -14,7 +14,7 @@ export default function GdprPolicy({
   takesEffectDate?: string;
 }) {
   return (
-    <section id="gdpr" className="ui-text">
+    <section id="gdpr" className="px-4 md:px-8">
       <p>
         <strong className="text-xl leading-loose">
           Ochranu osobních údajů nebereme na lehkou váhu. V souladu s nařízením
