@@ -29,6 +29,7 @@ export default function Drivers() {
               width="1920"
               height="1280"
               alt="group photo of our drivers"
+              loading="lazy"
               className="relative z-10 rounded-3xl object-cover"
             />
             <div className="absolute -bottom-3 -right-3 h-full w-full rounded-3xl bg-primary lg:-bottom-6 lg:-right-6" />
@@ -37,7 +38,7 @@ export default function Drivers() {
 
         <div className="col-span-1 mt-16 grid gap-4 xs:grid-cols-2 sm:gap-8 lg:col-span-2 lg:grid-cols-3">
           {t.index.drivers.drivers.map((driver) => (
-            <div
+            <Reveal
               key={driver.name}
               className="col-span-1 flex flex-col items-start"
             >
@@ -46,12 +47,13 @@ export default function Drivers() {
                 width="1920"
                 height="1280"
                 alt={driver.name}
+                loading="lazy"
                 className="rounded-3xl"
               />
               <Heading level={"none"} size="xs" className="mt-4">
                 {driver.name}
               </Heading>
-            </div>
+            </Reveal>
           ))}
         </div>
       </Container>

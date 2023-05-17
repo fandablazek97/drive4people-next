@@ -24,26 +24,6 @@ export default function CarFleet() {
               {t.index.carFleet.perex}
             </p>
           </Reveal>
-          {/* <Reveal>
-            <Heading level={3} size="sm" color="primary" hasMarginBottom>
-              Vozidlo je pro Vás vždy dokonale připravené.
-            </Heading>
-            <ul className="ml-4 flex list-disc flex-col gap-3 pt-3 text-gray-300">
-              <li>
-                Vozidlo je plně vybavené s automatickou převodovkou pro Vaše
-                pohodlí
-              </li>
-              <li>
-                Vozidlo je prostorné a pohodlné ať už jedete sami nebo ve více
-                lidech
-              </li>
-              <li>Není problém naložit velké zavazadla</li>
-              <li>
-                Ve vozidle – Wi-Fi připojení, Občerstvení, Dobíjení, Platební
-                terminál, Denní tisk
-              </li>
-            </ul>
-          </Reveal> */}
         </div>
 
         <Reveal className="ui-heading mt-28">

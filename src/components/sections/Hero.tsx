@@ -26,14 +26,15 @@ export default function Hero() {
         </div>
       </Container>
 
-      <div className="bg-gray-950/65 absolute inset-0 z-10 h-full w-full"></div>
+      <div className="absolute inset-0 z-10 h-full w-full bg-gray-950/65"></div>
 
       <Image
         src="/img/d4p-2023-1.jpg"
         width={1920}
-        height={1080}
+        height={1280}
         alt="Lukáš Jiránek"
         priority
+        loading="eager"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
     </header>
