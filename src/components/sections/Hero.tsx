@@ -1,5 +1,7 @@
+import { contact } from "@/configs/navigation";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
+import { HiPhone } from "react-icons/hi2";
 import { MdArrowDownward } from "react-icons/md";
 import Button from "../Button";
 import Container from "../Container";
@@ -19,10 +21,17 @@ export default function Hero() {
         <p className="mb-10 max-w-4xl text-base text-gray-200 sm:text-xl">
           {t.index.hero.perex}
         </p>
-        <div>
-          <Button href="/#sluzby" size="lg" leftIcon={<MdArrowDownward />}>
-            {t.index.hero.button}
-          </Button>
+        <div className="flex max-w-xs flex-col gap-5">
+          <div className="lg:hidden">
+            <Button href={contact[0].href} leftIcon={<HiPhone />} size="lg">
+              {contact[0].label}
+            </Button>
+          </div>
+          <div>
+            <Button href="/#sluzby" leftIcon={<MdArrowDownward />} size="lg">
+              {t.index.hero.button}
+            </Button>
+          </div>
         </div>
       </Container>
 
