@@ -185,10 +185,6 @@ export const ru = {
           name: "Nguyen Manh Tien",
           src: "/img/d4p-2023-6.jpg",
         },
-        {
-          name: "Matěj Bedrník",
-          src: "/img/d4p-2023-7.jpg",
-        },
       ],
     },
 

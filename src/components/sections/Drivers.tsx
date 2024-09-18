@@ -22,7 +22,7 @@ export default function Drivers() {
           <p className="max-w-prose">{t.index.drivers.perex}</p>
         </Reveal>
 
-        <Reveal className="col-span-1">
+        {/* <Reveal className="col-span-1">
           <div className="relative aspect-[3/2] w-full">
             <Image
               src="/img/d4p-2023-2.jpg"
@@ -34,7 +34,7 @@ export default function Drivers() {
             />
             <div className="absolute -bottom-3 -right-3 h-full w-full rounded-3xl bg-primary lg:-bottom-6 lg:-right-6" />
           </div>
-        </Reveal>
+        </Reveal> */}
 
         <div className="col-span-1 mt-16 grid gap-4 xs:grid-cols-2 sm:gap-8 lg:col-span-2 lg:grid-cols-3">
           {t.index.drivers.drivers.map((driver) => (
